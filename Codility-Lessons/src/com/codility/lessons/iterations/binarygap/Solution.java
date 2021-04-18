@@ -1,7 +1,12 @@
 package com.codility.lessons.iterations.binarygap;
 
 /**
- * Solution for Codility lesson: https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
+ * Solution for Codility lesson:
+ * https://app.codility.com/programmers/lessons/1-iterations/binary_gap/
+ * 
+ * Idea: There is no special trick. This is a straight solution where 
+ * we traverse the digits in binary representations and count the number 
+ * of 0s between two 1s.
  */
 public class Solution {
 
