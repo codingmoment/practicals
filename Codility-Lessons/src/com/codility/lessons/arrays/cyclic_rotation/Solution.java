@@ -1,4 +1,4 @@
-package com.codility.lessons.iterations.cyclic_rotation;
+package com.codility.lessons.arrays.cyclic_rotation;
 
 /**
  * Solution for Codility lesson:
