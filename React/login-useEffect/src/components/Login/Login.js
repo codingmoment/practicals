@@ -1,8 +1,9 @@
-import React, { useState, useEffect, useReducer } from "react";
+import React, { useState, useEffect, useReducer, useContext } from "react";
 
 import Card from "../UI/Card/Card";
 import classes from "./Login.module.css";
 import Button from "../UI/Button/Button";
+import AuthContext from "../../store/AuthContext";
 
 // In Reducer, you can write the logic to update the state based on other parts of the state.
 // Here, we are updating 'isValid' based on 'value' of the state.
@@ -21,6 +22,8 @@ const Login = (props) => {
   const [enteredPassword, setEnteredPassword] = useState("");
   const [passwordIsValid, setPasswordIsValid] = useState();
   const [formIsValid, setFormIsValid] = useState(false);
+
+  const context = useContext(AuthContext);
 
   const [emailState, dispatchEmail] = useReducer(emailReducer, {
     value: "",
@@ -67,7 +70,7 @@ const Login = (props) => {
 
   const submitHandler = (event) => {
     event.preventDefault();
-    props.onLogin(emailState.value, enteredPassword);
+    context.onLogin(emailState.value, enteredPassword);
   };
 
   return (
