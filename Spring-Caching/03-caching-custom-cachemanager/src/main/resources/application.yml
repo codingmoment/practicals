@@ -1,0 +1,15 @@
+demo:
+  cache:
+    cacheConfigurations:
+      tenMinuteCache:
+        name: tenMinuteCache
+        maxEntriesLocalHeap: 100
+        maxEntriesLocalDisk: 0
+        timeToLiveSeconds: 10
+      twentyMinuteCache:
+        name: twentyMinuteCache
+        maxEntriesLocalHeap: 100
+        maxEntriesLocalDisk: 0
+        timeToLiveSeconds: 20
+  name: infinite
+  maxEntriesLocalHeap: 100

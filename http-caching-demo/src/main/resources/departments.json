@@ -1,0 +1,16 @@
+{
+  "departments": [
+    {
+      "name": "Development",
+      "location": "Pune"
+    },
+    {
+      "name": "Testing",
+      "location": "Mumbai"
+    },
+    {
+      "name": "Management",
+      "location": "Bangalore"
+    }
+  ]
+}

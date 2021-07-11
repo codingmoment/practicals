@@ -1,0 +1,8 @@
+logging:
+  level:
+    org.springframework: TRACE
+
+spring:
+  cache:
+    jcache:
+      config: classpath:ehcache.xml
