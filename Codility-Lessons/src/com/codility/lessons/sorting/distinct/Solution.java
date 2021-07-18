@@ -7,6 +7,7 @@ import java.util.Arrays;
  * https://app.codility.com/programmers/lessons/6-sorting/distinct/
  * 
  * Idea:
+ * Sort the integer array. Traverse through the sorted array to count distinct values.
  */
 public class Solution {
 
